@@ -54,19 +54,15 @@ int main()
         }
     }
     void initV(double* xV, double* yV, int N) {
-        int min = 2;
-        int max = 4;
-        int L = max - min + 1;
         for (int i = 0; i < N; i++) {
-            xV[i] = (double)rand() / RAND_MAX * pow(-1, rand() % L + min);
-            yV[i] = (double)rand() / RAND_MAX * pow(-1, rand() % L + min);
-
+            xV[i] = 2 * ((double)rand() / RAND_MAX) - 1;
+            yV[i] = 2 * ((double)rand() / RAND_MAX) - 1;
         }
     }
     void move(double* x, double* y, double* xV, double* yV, int N) {
         for (int i = 0; i < N; i++) {
-            x[i] += xV[i];
-            y[i] += yV[i];
+            x[i] += 0.3*xV[i];
+            y[i] += 0.3 * yV[i];
         }
     }
     void collideWall(double* x, double* y, double* xV, double* yV, int N) {
