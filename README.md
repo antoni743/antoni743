@@ -4,7 +4,8 @@
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
-#define _CRT_SECURE_NO_WARNINGS
+
+ #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -83,17 +84,17 @@ int main()
     }
     void collideBall(double* x, double* y, double* xV, double* yV, int N) {
         for (int i = 0; i < N; i++) {
-            for (int j = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
                 if (i != j) {
-                    double cx,cy, o;
-                    o = (pow((x[i] - x[j]), 2.) + pow((y[i] - y[j]), 2.));
+                double cx,cy, o;
+                o = (pow((x[i] - x[j]), 2.) + pow((y[i] - y[j]), 2.));
+                    if (sqrt(o) <= 40 ) {
                     cx = (x[i] - x[j]) * (xV[i] - xV[j]) / o;
                     cy = (y[i] - y[j]) * (yV[i] - yV[j]) / o;
-                    if (sqrt(o) <= 40 ) {
-                        xV[i] = xV[i] + cx * (x[i] - x[j]);
-                        xV[j] = xV[j] - cx * (x[i] - x[j]);
-                        yV[i] = yV[i] + cy * (y[i] - y[j]);
-                        yV[j] = yV[j] - cy * (y[i] - y[j]);
+                    xV[i] =  xV[i] + cx * (x[j] - x[i]);
+                    xV[j] =  xV[j] - cx * (x[j] - x[i]);
+                    yV[i] =  yV[i] + cy * (y[j] - y[i]);
+                    yV[j] =  yV[j] - cy * (y[j] - y[i]);
                     }
                 }
         }
