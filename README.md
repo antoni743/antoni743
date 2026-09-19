@@ -5,5 +5,5 @@
   <li> 🌱 Currently learning more about game development, computer networking, and software)<br>
   <li> 🎮 Recently joined a game jam and worked on [Once again?](https://brave-team1.itch.io/once-again)<br>
   <li> 👯 I’m open to collaborating on interesting projects<br>
-  <li> 📫 How to reach me: [antoni.feret@gmail.xom](mailto:antoni.feret@gmail.com)<br>
+  <li> 📫 How to reach me: [email](mailto:antoni.feret@gmail.com)<br>
 </ul>
