@@ -1,8 +1,8 @@
 ## Hey, I'm Antoni 👋
 
-I'm currently a Computer Science student at Gdańsk University of Technology
-🎮 Recently joined a game jam and worked on [Once again?](https://brave-team1.itch.io/once-again)
-📫 How to reach me: [Email](mailto:twojemail@example.com)
+I'm currently a Computer Science student at Gdańsk University of Technology<br>
+🎮 Recently joined a game jam and worked on [Once again?](https://brave-team1.itch.io/once-again)<br>
+📫 How to reach me: [Email](mailto:twojemail@example.com)<br>
 <!--
 
 
